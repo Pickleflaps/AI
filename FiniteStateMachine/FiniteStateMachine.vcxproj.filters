@@ -14,11 +14,11 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
     <Filter Include="AIToolKit">
-      <UniqueIdentifier>{daab60d1-ce88-47f4-ab02-aaecd82f10fa}</UniqueIdentifier>
+      <UniqueIdentifier>{2d07d9cd-55c8-4a5b-9852-789544b719db}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="AgentsApp.cpp">
+    <ClCompile Include="FiniteStateMachineApp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
@@ -33,9 +33,12 @@
     <ClCompile Include="..\AIToolKit\KeyboardBehaviour.cpp">
       <Filter>AIToolKit</Filter>
     </ClCompile>
+    <ClCompile Include="..\AIToolKit\State.cpp">
+      <Filter>AIToolKit</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AgentsApp.h">
+    <ClInclude Include="FiniteStateMachineApp.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\AIToolKit\KeyboardBehaviour.h">
@@ -48,6 +51,15 @@
       <Filter>AIToolKit</Filter>
     </ClInclude>
     <ClInclude Include="..\AIToolKit\GameObject.h">
+      <Filter>AIToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AIToolKit\State.h">
+      <Filter>AIToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="GuardStates.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AIToolKit\Condition.h">
       <Filter>AIToolKit</Filter>
     </ClInclude>
   </ItemGroup>

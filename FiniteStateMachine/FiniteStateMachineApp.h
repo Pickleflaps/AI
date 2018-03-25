@@ -2,16 +2,15 @@
 
 #include "Application.h"
 #include "Renderer2D.h"
-
 #include "GameObject.h"
 #include "KeyboardBehaviour.h"
-#include "FollowBehaviour.h"
+#include "State.h"
 
-class AgentsApp : public aie::Application {
+class FiniteStateMachineApp : public aie::Application {
 public:
 
-	AgentsApp();
-	virtual ~AgentsApp();
+	FiniteStateMachineApp();
+	virtual ~FiniteStateMachineApp();
 
 	virtual bool startup();
 	virtual void shutdown();
@@ -28,7 +27,5 @@ protected:
 	KeyboardBehaviour	m_keyboardBehaviour;
 
 	GameObject			m_enemy;
-	FollowBehaviour		m_followBehaviour;
-	
-
+	FiniteStateMachine	m_guardFSM;
 };

@@ -19,11 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{DEA49362-B428-4215-8D64-4EA0B4FF0858}</ProjectGuid>
+    <ProjectGuid>{EDC3BE95-ED4D-4949-AFB7-682FF51F1DEE}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>Agents</RootNamespace>
+    <RootNamespace>FiniteStateMachine</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
-    <ProjectName>01 - Agents</ProjectName>
+    <ProjectName>02 - FiniteStateMachine</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -166,15 +166,19 @@
     <ClCompile Include="..\AIToolKit\FollowBehaviour.cpp" />
     <ClCompile Include="..\AIToolKit\GameObject.cpp" />
     <ClCompile Include="..\AIToolKit\KeyboardBehaviour.cpp" />
-    <ClCompile Include="AgentsApp.cpp" />
+    <ClCompile Include="..\AIToolKit\State.cpp" />
+    <ClCompile Include="FiniteStateMachineApp.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\AIToolKit\Behaviour.h" />
+    <ClInclude Include="..\AIToolKit\Condition.h" />
     <ClInclude Include="..\AIToolKit\FollowBehaviour.h" />
     <ClInclude Include="..\AIToolKit\GameObject.h" />
     <ClInclude Include="..\AIToolKit\KeyboardBehaviour.h" />
-    <ClInclude Include="AgentsApp.h" />
+    <ClInclude Include="..\AIToolKit\State.h" />
+    <ClInclude Include="FiniteStateMachineApp.h" />
+    <ClInclude Include="GuardStates.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
