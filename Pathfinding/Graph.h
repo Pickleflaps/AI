@@ -6,6 +6,7 @@
 #include <glm/vec2.hpp>
 #include <glm/vec4.hpp>
 #include "Renderer2D.h"
+#include <functional>
 
 class Node;
 const float m_floatMax = std::numeric_limits<float>::max();
@@ -39,23 +40,43 @@ public:
 	glm::vec2 index;
 
 	bool highlighted;
+	bool searched;
 
 	std::vector<Edge*> connections;
 	NodeType nodeType;
-
+	
 	//Functions
 	void Render(aie::Renderer2D* spriteBatch);
 	void Reset();
 
 	//Scores
 	float gScore;
+	float hScore; //Heuristic value. if left at 0, behaviour will be like Djikstra's 
+	float fScore;
 
 	//Traversal only
 	Node* parent;
 
-	static bool compareGScore(Node* a, Node* b)
-	{
+	static bool compareGScore(Node* a, Node* b) {
 		return a->gScore < b->gScore;
+	}
+
+	static bool compareFScore(Node* a, Node* b) {
+		return a->fScore < b->fScore;
+	}
+
+	static bool heuristicDjikstras(Node* a, Node* b) {
+		return 0; // djikstra's equivilant
+	}
+
+	static float heuristicDistance(Node* a, Node* b) {
+		float x = b->position.x - a->position.x;
+		float y = b->position.y - a->position.y;
+		return sqrt(x * x + y * y); // this is the slowest 
+	}
+
+	static float heuristicManhattan(Node* a, Node*b) {
+		return (b->index.x - a->index.x) + (b->index.y - a->index.y); // this is 
 	}
 
 };
@@ -74,6 +95,13 @@ public:
 
 	//Searching Algorithms
 	std::vector<Node*> DjikstraSearch(Node* startNode, Node* target);
+
+	//
+	//	A*
+	//
+	typedef std::function<float(Node*a, Node*b)> HeuristicCheck;
+	std::vector<Node*> AStarSearch(Node* startNode, Node* endNode, HeuristicCheck heuristic);
+	void Reset();
 
 	//Render Function
 	void Render(aie::Renderer2D* spriteBatch);

@@ -9,7 +9,7 @@ int main() {
 	app->run("AIE", 1280, 720, false);
 
 	// deallocation
-	delete app;
+	delete app; // DO NOT MANUALLY DELETE "Font" or 2dRender etc << this will take care of it
 
 	return 0;
 }

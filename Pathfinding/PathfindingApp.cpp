@@ -19,7 +19,7 @@ bool PathfindingApp::startup() {
 	
 	// TODO: remember to change this when redistributing a build!
 	// the following path would be used instead: "./font/consolas.ttf"
-	m_font = new aie::Font("../bin/font/consolas.ttf", 32);
+	//m_font = new aie::Font("../bin/font/consolas.ttf", 32);
 
 	int xGridSize = 20;
 	int yGridSize = 20;
@@ -43,36 +43,55 @@ bool PathfindingApp::startup() {
 			float sqrDist = x * x + y * y;
 			float dist = sqrt(sqrDist);
 
-			float maxDistance = 48.0f;
+			float maxDistance = 48;
 			
+			//TODO: ADD A COST PER NODE TYPE RATHER THAN DISTANCE
+			//EG: IF DISTANCE IS GREATER THAN OR EQUAL TO MAX DISTANCE ASSIGN A COST BASED ON CONNECTION TYPE 
+			//EG: GRASS MAY BE DISTANCE, FOREST = DISTANCE * 2 AND MOUNTAIN = DISTANCE * 5
 			if (dist <= maxDistance)
 				graph.AddConnection(a, b, sqrDist);
+
+			//if (dist <= maxDistance)
+			//	graph.AddConnection(a, b, sqrDist);
 		}
 	}
 
 	//perform a Djikstra's search
 	Node* startNode = graph.FindNodeAtIndex(0, 0);
-	Node* endnode = graph.FindNodeAtIndex(9, 3);
+	Node* endnode = graph.FindNodeAtIndex(7, 9);
 
-	std::vector<Node*> nodes = graph.DjikstraSearch(startNode, endnode);
+	graph.AStarSearch(startNode, endnode, Node::heuristicDistance);
 
-	for (auto node : nodes)
-		node->highlighted = true;
+
+	//std::vector<Node*> nodes = graph.DjikstraSearch(startNode, endnode);
+
+	//for (auto node : nodes)
+		//node->highlighted = true;
 
 	return true;
 }
 
 void PathfindingApp::shutdown() {
 
-	delete m_font;
-	delete m_2dRenderer;
+	//delete m_font;
+	//delete m_2dRenderer;
 }
 
 void PathfindingApp::update(float deltaTime) {
 
 	// input example
 	aie::Input* input = aie::Input::getInstance();
+	float x, y;
+	m_2dRenderer->getCameraPos(x, y);
 
+	if (input->isKeyDown(aie::INPUT_KEY_UP))
+		m_2dRenderer->setCameraPos(x, y - 5);
+	if (input->isKeyDown(aie::INPUT_KEY_DOWN))
+		m_2dRenderer->setCameraPos(x, y + 5);
+	if (input->isKeyDown(aie::INPUT_KEY_LEFT))
+		m_2dRenderer->setCameraPos(x + 5, y);
+	if (input->isKeyDown(aie::INPUT_KEY_RIGHT))
+		m_2dRenderer->setCameraPos(x - 5, y);
 	// exit the application
 	if (input->isKeyDown(aie::INPUT_KEY_ESCAPE))
 		quit();
@@ -86,7 +105,7 @@ void PathfindingApp::draw() {
 	// begin drawing sprites
 	m_2dRenderer->begin();
 
-	m_2dRenderer->setCameraPos(-50, -50);
+
 	// draw your stuff here!
 	for (auto v : graph.nodes) {
 		v->Render(m_2dRenderer);
