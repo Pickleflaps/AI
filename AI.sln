@@ -21,9 +21,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02 - FiniteStateMachine", "
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03 - SteeringBehaviours", "SteeringBehaviours\SteeringBehaviours.vcxproj", "{DB88A587-4BA3-4965-99A4-183B328F0FE6}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Blackboards", "Blackboards\Blackboards.vcxproj", "{0FA2CE4A-0156-4FED-80A2-65D18B93ECA2}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "04 - Blackboards", "Blackboards\Blackboards.vcxproj", "{0FA2CE4A-0156-4FED-80A2-65D18B93ECA2}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Pathfinding", "Pathfinding\Pathfinding.vcxproj", "{E60EF925-E234-4086-95D8-89506DF18BF3}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "05 - Pathfinding", "Pathfinding\Pathfinding.vcxproj", "{E60EF925-E234-4086-95D8-89506DF18BF3}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "06 - DecisionTrees", "DecisionTrees\DecisionTrees.vcxproj", "{7A5B796B-55CB-40D8-9EDC-4BC6BA7C29A7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -115,6 +117,16 @@ Global
 		{E60EF925-E234-4086-95D8-89506DF18BF3}.Release|x64.Build.0 = Release|x64
 		{E60EF925-E234-4086-95D8-89506DF18BF3}.Release|x86.ActiveCfg = Release|Win32
 		{E60EF925-E234-4086-95D8-89506DF18BF3}.Release|x86.Build.0 = Release|Win32
+		{7A5B796B-55CB-40D8-9EDC-4BC6BA7C29A7}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{7A5B796B-55CB-40D8-9EDC-4BC6BA7C29A7}.Debug|x64.ActiveCfg = Debug|x64
+		{7A5B796B-55CB-40D8-9EDC-4BC6BA7C29A7}.Debug|x64.Build.0 = Debug|x64
+		{7A5B796B-55CB-40D8-9EDC-4BC6BA7C29A7}.Debug|x86.ActiveCfg = Debug|Win32
+		{7A5B796B-55CB-40D8-9EDC-4BC6BA7C29A7}.Debug|x86.Build.0 = Debug|Win32
+		{7A5B796B-55CB-40D8-9EDC-4BC6BA7C29A7}.Release|Any CPU.ActiveCfg = Release|Win32
+		{7A5B796B-55CB-40D8-9EDC-4BC6BA7C29A7}.Release|x64.ActiveCfg = Release|x64
+		{7A5B796B-55CB-40D8-9EDC-4BC6BA7C29A7}.Release|x64.Build.0 = Release|x64
+		{7A5B796B-55CB-40D8-9EDC-4BC6BA7C29A7}.Release|x86.ActiveCfg = Release|Win32
+		{7A5B796B-55CB-40D8-9EDC-4BC6BA7C29A7}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

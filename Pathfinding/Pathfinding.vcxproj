@@ -22,7 +22,7 @@
     <ProjectGuid>{E60EF925-E234-4086-95D8-89506DF18BF3}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>Pathfinding</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
     <ProjectName>05 - Pathfinding</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
