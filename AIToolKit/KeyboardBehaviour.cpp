@@ -44,5 +44,5 @@ bool KeyboardBehaviour::execute(GameObject * gameObject, float deltaTime)
 
 	gameObject->translate(x * m_speed * deltaTime, y * m_speed * deltaTime);
 
-	return false;
+	return true;
 }

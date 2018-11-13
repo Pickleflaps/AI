@@ -29,8 +29,6 @@ bool FiniteStateMachine::execute(GameObject * gameObject, float deltaTime) {
 
 			m_currentState->m_timer += deltaTime;
 			m_currentState->update(gameObject, deltaTime);
-			return true;
 		}
-		return false;
-	
+		return true;
 }

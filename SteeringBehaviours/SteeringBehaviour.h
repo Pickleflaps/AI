@@ -38,7 +38,7 @@ public:
 		}
 	}
 
-	virtual bool execute(GameObject* gameObject, float deltaTime) { 
+	virtual bool execute(GameObject* gameObject, float deltaTime) {
 	
 		Force force = { 0,0 };
 		for (auto& wf : m_forces)

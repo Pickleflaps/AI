@@ -1,19 +1,21 @@
-#include "FollowBehaviour.h"
+#include "SeekDecisionNode.h"
 
-FollowBehaviour::FollowBehaviour() 
-	: m_speed(1)
-	, m_target(nullptr)
+
+SeekDecisionNode::SeekDecisionNode(GameObject * target, float maxSpeed)
+{
+	this->m_target = target;
+	this->m_maxSpeed = maxSpeed;
+}
+
+SeekDecisionNode::~SeekDecisionNode()
 {
 }
 
-FollowBehaviour::~FollowBehaviour()
+void SeekDecisionNode::MakeDecision(GameObject * gameObject, float deltaTime)
 {
-}
-
-bool FollowBehaviour::execute(GameObject * gameObject, float deltaTime)
-{
+	//seek to your target
 	if (m_target == nullptr)
-		return false; 
+		return;
 
 	//get the target position
 	float tx = 0, ty = 0;
@@ -33,8 +35,7 @@ bool FollowBehaviour::execute(GameObject * gameObject, float deltaTime)
 	{
 		xDiff /= distance;
 		yDiff /= distance;
-		gameObject->translate(xDiff * m_speed * deltaTime, yDiff * m_speed * deltaTime);
+		gameObject->translate(xDiff * m_maxSpeed * deltaTime, yDiff * m_maxSpeed * deltaTime);
 	}
 
-	return true;
 }

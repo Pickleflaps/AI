@@ -82,6 +82,9 @@ public:
 
 	virtual bool execute(GameObject* gameObject, float deltaTime);
 
+
+	
+
 protected:
 
 	State*		m_currentState;

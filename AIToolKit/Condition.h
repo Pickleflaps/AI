@@ -95,3 +95,18 @@ private:
 	const Condition* m_condition;
 
 };
+
+class PathFoundCondition : public Condition {
+public:
+	PathFoundCondition(const Condition* condition) : m_condition(condition) {}
+	~PathFoundCondition() {}
+	
+	virtual bool test(GameObject* gameObject) const {
+	
+	}
+
+private:
+
+
+	const Condition* m_condition;
+};

@@ -19,11 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{7A5B796B-55CB-40D8-9EDC-4BC6BA7C29A7}</ProjectGuid>
+    <ProjectGuid>{5D8DFAB3-1B5F-4303-9697-FF5E6BC03D69}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>DecisionTrees</RootNamespace>
+    <RootNamespace>AI_Assignment</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
-    <ProjectName>06 - DecisionTrees</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -88,14 +87,14 @@
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(SolutionDir)temp\$(ProjectName)\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)temp\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
-    <IncludePath>$(SolutionDir)AIToolKit;$(SolutionDir)bootstrap;$(SolutionDir)dependencies/imgui;$(SolutionDir)dependencies/glm;$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir);$(SolutionDir)AIToolKit;$(SolutionDir)bootstrap;$(SolutionDir)dependencies/imgui;$(SolutionDir)dependencies/glm;$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)temp\bootstrap\$(Platform)\$(Configuration);$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(SolutionDir)temp\$(ProjectName)\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)temp\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
-    <IncludePath>$(SolutionDir)AIToolKit;$(SolutionDir)bootstrap;$(SolutionDir)dependencies/imgui;$(SolutionDir)dependencies/glm;$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)bootstrap;$(SolutionDir)dependencies/imgui;$(SolutionDir)dependencies/glm;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
     <LibraryPath>$(SolutionDir)temp\bootstrap\$(Platform)\$(Configuration);$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -170,11 +169,12 @@
     <ClCompile Include="..\AIToolKit\KeyboardBehaviour.cpp" />
     <ClCompile Include="..\AIToolKit\State.cpp" />
     <ClCompile Include="..\SteeringBehaviours\SteeringBehaviour.cpp" />
-    <ClCompile Include="AttackDecisionNode.cpp" />
-    <ClCompile Include="DecisionTreesApp.cpp" />
+    <ClCompile Include="AI_AssignmentApp.cpp" />
+    <ClCompile Include="Composite.cpp" />
+    <ClCompile Include="Graph.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="SeekDecisionNode.cpp" />
-    <ClCompile Include="WanderDecisionNode.cpp" />
+    <ClCompile Include="Selector.cpp" />
+    <ClCompile Include="Sequence.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\AIToolKit\aiUtilities.h" />
@@ -187,11 +187,12 @@
     <ClInclude Include="..\AIToolKit\KeyboardBehaviour.h" />
     <ClInclude Include="..\AIToolKit\State.h" />
     <ClInclude Include="..\SteeringBehaviours\SteeringBehaviour.h" />
-    <ClInclude Include="AttackDecisionNode.h" />
-    <ClInclude Include="DecisionTreeInclude.h" />
-    <ClInclude Include="DecisionTreesApp.h" />
-    <ClInclude Include="SeekDecisionNode.h" />
-    <ClInclude Include="WanderDecisionNode.h" />
+    <ClInclude Include="AI_AssignmentApp.h" />
+    <ClInclude Include="Composite.h" />
+    <ClInclude Include="Graph.h" />
+    <ClInclude Include="GuardStates.h" />
+    <ClInclude Include="Selector.h" />
+    <ClInclude Include="Sequence.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />

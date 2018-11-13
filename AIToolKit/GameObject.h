@@ -1,6 +1,7 @@
 #pragma once
 
 #include <vector>
+#include <Texture.h>
 
 class Behaviour;
 
@@ -9,11 +10,14 @@ class GameObject
 public:
 	
 	GameObject();
+	GameObject(aie::Texture* tex, float x, float y);
 	~GameObject();
 
 	// movement functions
 	void setPosition(float x, float y)		{ m_x = x, m_y = y; }
 	void getPosition(float *x, float *y) const	{ *x = m_x, *y = m_y; }
+	void getPosition(int *x, int *y) const { *x = m_x, *y = m_y; }
+
 	void translate(float x, float y)		{ m_x += x, m_y += y; }
 
 	// add a behaviour
@@ -63,7 +67,11 @@ protected:
 
 	float m_wanderX, m_wanderY;
 
+	aie::Texture* m_texture;
+	float m_tex_width;
+	float m_tex_height;
 
 	std::vector<Behaviour*> m_behaviours;
+
 
 };

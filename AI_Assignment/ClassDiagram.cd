@@ -1,44 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="AttackDecisionNode" Collapsed="true">
-    <Position X="8" Y="6.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAICAAAAAA=</HashCode>
-      <FileName>AttackDecisionNode.h</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="DecisionTreesApp" Collapsed="true">
-    <Position X="19.5" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAgAIAAAAABBAAIAAAAgAAAAAAAABAAAEAAECAA=</HashCode>
-      <FileName>DecisionTreesApp.h</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="SeekDecisionNode" Collapsed="true">
-    <Position X="10.25" Y="6.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAABAAAAQAAAAAACAEAAAA=</HashCode>
-      <FileName>SeekDecisionNode.h</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="WanderDecisionNode" Collapsed="true">
-    <Position X="12.5" Y="6.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAABAACAAAAAA=</HashCode>
-      <FileName>WanderDecisionNode.h</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="Behaviour" Collapsed="true">
-    <Position X="9" Y="3.5" Width="1.5" />
+    <Position X="7.75" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAEAAAAAAAAEAAAAAAAAAAAAAAAAAAAAIAA=</HashCode>
       <FileName>C:\Users\Brendan\source\repos\Artificial Intelligence\AIToolKit\Behaviour.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BooleanDecisionNode" Collapsed="true">
-    <Position X="14.75" Y="6.25" Width="1.5" />
+    <Position X="1" Y="6.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAIABBAAAAAAAAAAAAAAAAAAQAAAAAAAACAAAAAA=</HashCode>
+      <HashCode>CAAAAIABBAAAAAAAAAAAAAAAAAAQAAAAAAAACAAAAAA=</HashCode>
       <FileName>C:\Users\Brendan\source\repos\Artificial Intelligence\AIToolKit\BooleanDecisionNode.h</FileName>
     </TypeIdentifier>
   </Class>
@@ -50,63 +22,63 @@
     </TypeIdentifier>
   </Class>
   <Class Name="FloatRangeCondition" Collapsed="true">
-    <Position X="0.75" Y="8.75" Width="1.5" />
+    <Position X="3" Y="8.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAgAIAAAAAAAAAgAAAQAAAAIBAAAAAAAAAA=</HashCode>
       <FileName>C:\Users\Brendan\source\repos\Artificial Intelligence\AIToolKit\Condition.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="FloatGreaterCondition" Collapsed="true">
-    <Position X="3" Y="8.75" Width="1.5" />
+    <Position X="5.25" Y="8.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAABAAAAAAAAAAAAAAEAAAAAAQAAAAIAAAAAAIAAAA=</HashCode>
       <FileName>C:\Users\Brendan\source\repos\Artificial Intelligence\AIToolKit\Condition.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="WithinRangeCondition" Collapsed="true">
-    <Position X="5.25" Y="8.75" Width="1.5" />
+    <Position X="7.5" Y="8.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAQAAAAAAAAACAAAAAAAAAQAIAgAAAAAAAAA=</HashCode>
       <FileName>C:\Users\Brendan\source\repos\Artificial Intelligence\AIToolKit\Condition.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="NotCondition" Collapsed="true">
-    <Position X="7.5" Y="8.75" Width="1.5" />
+    <Position X="0.75" Y="8.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>gAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAIABAAAAAAAAA=</HashCode>
       <FileName>C:\Users\Brendan\source\repos\Artificial Intelligence\AIToolKit\Condition.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DecisionNode">
-    <Position X="11.25" Y="4.75" Width="1.5" />
+  <Class Name="DecisionNode" Collapsed="true">
+    <Position X="1" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAgAAAAAAAEAAAAAAAAAABAAAAACAAAAAA=</HashCode>
       <FileName>C:\Users\Brendan\source\repos\Artificial Intelligence\AIToolKit\DecisionNode.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="FollowBehaviour" Collapsed="true">
-    <Position X="1.25" Y="4.75" Width="1.5" />
+    <Position X="5.5" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAgQAAAAAAAAAAAAEAAAAAAAQAwQAAAAAAAAAAAA=</HashCode>
       <FileName>C:\Users\Brendan\source\repos\Artificial Intelligence\AIToolKit\FollowBehaviour.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="GameObject" Collapsed="true">
-    <Position X="21.25" Y="0.5" Width="1.5" />
+    <Position X="18.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>QBABK4gIAAAAJAAABAhAAAACQAAAYAiAAADAAQM0BAA=</HashCode>
       <FileName>C:\Users\Brendan\source\repos\Artificial Intelligence\AIToolKit\GameObject.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="KeyboardBehaviour" Collapsed="true">
-    <Position X="3.5" Y="4.75" Width="1.5" />
+    <Position X="12.25" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAQAgAAAAAAAIAAAQA=</HashCode>
       <FileName>C:\Users\Brendan\source\repos\Artificial Intelligence\AIToolKit\KeyboardBehaviour.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Transition" Collapsed="true">
-    <Position X="19.5" Y="1.5" Width="1.5" />
+    <Position X="17" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>gAAAAAAAAAAAAAAAAAAAAAAAIABCAQAAAAABAAAAAAA=</HashCode>
       <FileName>C:\Users\Brendan\source\repos\Artificial Intelligence\AIToolKit\State.h</FileName>
@@ -120,7 +92,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="FiniteStateMachine" Collapsed="true">
-    <Position X="17" Y="4.75" Width="1.5" />
+    <Position X="3.25" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>kEAIAAAAAAACAAAAAEBEBAAAAACAAAAAAAACAAAAAAA=</HashCode>
       <FileName>C:\Users\Brendan\source\repos\Artificial Intelligence\AIToolKit\State.h</FileName>
@@ -134,7 +106,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="SteeringBehaviour" Collapsed="true">
-    <Position X="5.75" Y="4.75" Width="1.5" />
+    <Position X="14.5" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAQBCAAAAAABAAAAEAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
       <FileName>C:\Users\Brendan\source\repos\Artificial Intelligence\SteeringBehaviours\SteeringBehaviour.h</FileName>
@@ -148,63 +120,91 @@
     </TypeIdentifier>
   </Class>
   <Class Name="SeekForce" Collapsed="true">
-    <Position X="10" Y="1.75" Width="1.5" />
+    <Position X="1" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAgIAAAAAAAABAAAAAAAAAAAAAQAAAAAAAAAAAAI=</HashCode>
       <FileName>C:\Users\Brendan\source\repos\Artificial Intelligence\SteeringBehaviours\SteeringBehaviour.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="FleeForce" Collapsed="true">
-    <Position X="1" Y="1.75" Width="1.5" />
+    <Position X="5.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAgAAAAAAAAABAAAAAAAAAAAAAQEAAAAAAAAAAAI=</HashCode>
       <FileName>C:\Users\Brendan\source\repos\Artificial Intelligence\SteeringBehaviours\SteeringBehaviour.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="PursueForce" Collapsed="true">
-    <Position X="3.25" Y="1.75" Width="1.5" />
+    <Position X="7.75" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAgAAAAAAAAgAAEAAAAAAAAAAAQAAAAAAAAAAAAI=</HashCode>
       <FileName>C:\Users\Brendan\source\repos\Artificial Intelligence\SteeringBehaviours\SteeringBehaviour.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="EvadeForce" Collapsed="true">
-    <Position X="5.5" Y="1.75" Width="1.5" />
+    <Position X="10" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAgQAAAAAAAAAAAAAAAAAAAAAAQAAAAAAACAAAAI=</HashCode>
       <FileName>C:\Users\Brendan\source\repos\Artificial Intelligence\SteeringBehaviours\SteeringBehaviour.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="WanderForce" Collapsed="true">
-    <Position X="7.75" Y="1.75" Width="1.5" />
+    <Position X="12.25" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAQAI=</HashCode>
       <FileName>C:\Users\Brendan\source\repos\Artificial Intelligence\SteeringBehaviours\SteeringBehaviour.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ObstacleAvoidanceForce" Collapsed="true">
-    <Position X="12.25" Y="1.75" Width="1.5" />
+    <Position X="3.25" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAgAAIAAAAAAAAAAAAAAAAAEAQAAADAAAAgAAAAAAAI=</HashCode>
       <FileName>C:\Users\Brendan\source\repos\Artificial Intelligence\SteeringBehaviours\SteeringBehaviour.h</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="AI_AssignmentApp" Collapsed="true">
+    <Position X="17" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAgAIAAAAAABAAIAAAAgAgAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>AI_AssignmentApp.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Composite" Collapsed="true">
+    <Position X="9" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAEAAAAAAAAAAIAAAAAAAAAAAg=</HashCode>
+      <FileName>Composite.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Selector" Collapsed="true">
+    <Position X="7.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAEAACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Selector.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sequence" Collapsed="true">
+    <Position X="10" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Sequence.h</FileName>
+    </TypeIdentifier>
+  </Class>
   <Struct Name="Force" Collapsed="true">
-    <Position X="19.5" Y="2.75" Width="1.5" />
+    <Position X="17" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAAAAAAA=</HashCode>
       <FileName>C:\Users\Brendan\source\repos\Artificial Intelligence\SteeringBehaviours\SteeringBehaviour.h</FileName>
     </TypeIdentifier>
   </Struct>
   <Struct Name="WeightedForce" Collapsed="true">
-    <Position X="19.5" Y="3.75" Width="1.5" />
+    <Position X="17" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
       <FileName>C:\Users\Brendan\source\repos\Artificial Intelligence\SteeringBehaviours\SteeringBehaviour.h</FileName>
     </TypeIdentifier>
   </Struct>
   <Struct Name="Obstacle" Collapsed="true">
-    <Position X="21.25" Y="2.75" Width="1.5" />
+    <Position X="18.75" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABhAAAAAAA=</HashCode>
       <FileName>C:\Users\Brendan\source\repos\Artificial Intelligence\SteeringBehaviours\SteeringBehaviour.h</FileName>

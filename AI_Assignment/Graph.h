@@ -75,6 +75,7 @@ public:
 		return sqrt(x * x + y * y); // this is the slowest 
 	}
 
+
 	static float heuristicManhattan(Node* a, Node*b) {
 		return (b->index.x - a->index.x) + (b->index.y - a->index.y); // this
 	}
@@ -101,12 +102,15 @@ public:
 	//
 	typedef std::function<float(Node*a, Node*b)> HeuristicCheck;
 	std::vector<Node*> AStarSearch(Node* startNode, Node* endNode, HeuristicCheck heuristic);
+
 	void Reset();
+	int GetNodeSize() { return (int)nodes.size(); }
 
 	//Render Function
 	void Render(aie::Renderer2D* spriteBatch);
 
 	std::vector<Node*> nodes;
+	std::vector<Node*> path;
 
 	~Graph();
 

@@ -14,17 +14,20 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
     <Filter Include="AIToolKit">
-      <UniqueIdentifier>{6a29dcad-ed95-47a8-84b9-7e2066fc04df}</UniqueIdentifier>
+      <UniqueIdentifier>{5daf9f9e-3912-4ea7-bf10-cfa64e7e2c86}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="DecisionTreesApp.cpp">
+    <ClCompile Include="FlockingApp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\AIToolKit\aiUtilities.cpp">
+      <Filter>AIToolKit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AIToolKit\BooleanDecisionNode.cpp">
       <Filter>AIToolKit</Filter>
     </ClCompile>
     <ClCompile Include="..\AIToolKit\FollowBehaviour.cpp">
@@ -42,21 +45,12 @@
     <ClCompile Include="..\SteeringBehaviours\SteeringBehaviour.cpp">
       <Filter>AIToolKit</Filter>
     </ClCompile>
-    <ClCompile Include="WanderDecisionNode.cpp">
+    <ClCompile Include="FlockingForce.cpp">
       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="AttackDecisionNode.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="SeekDecisionNode.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\AIToolKit\BooleanDecisionNode.cpp">
-      <Filter>AIToolKit</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="DecisionTreesApp.h">
+    <ClInclude Include="FlockingApp.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\AIToolKit\aiUtilities.h">
@@ -65,7 +59,13 @@
     <ClInclude Include="..\AIToolKit\Behaviour.h">
       <Filter>AIToolKit</Filter>
     </ClInclude>
+    <ClInclude Include="..\AIToolKit\BooleanDecisionNode.h">
+      <Filter>AIToolKit</Filter>
+    </ClInclude>
     <ClInclude Include="..\AIToolKit\Condition.h">
+      <Filter>AIToolKit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AIToolKit\DecisionNode.h">
       <Filter>AIToolKit</Filter>
     </ClInclude>
     <ClInclude Include="..\AIToolKit\FollowBehaviour.h">
@@ -83,26 +83,8 @@
     <ClInclude Include="..\SteeringBehaviours\SteeringBehaviour.h">
       <Filter>AIToolKit</Filter>
     </ClInclude>
-    <ClInclude Include="..\AIToolKit\DecisionNode.h">
-      <Filter>AIToolKit</Filter>
-    </ClInclude>
-    <ClInclude Include="..\AIToolKit\BooleanDecisionNode.h">
-      <Filter>AIToolKit</Filter>
-    </ClInclude>
-    <ClInclude Include="DecisionTreeInclude.h">
+    <ClInclude Include="FlockingForce.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="WanderDecisionNode.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="AttackDecisionNode.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="SeekDecisionNode.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ClassDiagram.cd" />
   </ItemGroup>
 </Project>

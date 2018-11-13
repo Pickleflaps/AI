@@ -13,92 +13,95 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="AIToolKit">
-      <UniqueIdentifier>{6a29dcad-ed95-47a8-84b9-7e2066fc04df}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="DecisionTreesApp.cpp">
+    <ClCompile Include="AI_AssignmentApp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\AIToolKit\aiUtilities.cpp">
-      <Filter>AIToolKit</Filter>
-    </ClCompile>
-    <ClCompile Include="..\AIToolKit\FollowBehaviour.cpp">
-      <Filter>AIToolKit</Filter>
-    </ClCompile>
-    <ClCompile Include="..\AIToolKit\GameObject.cpp">
-      <Filter>AIToolKit</Filter>
-    </ClCompile>
-    <ClCompile Include="..\AIToolKit\KeyboardBehaviour.cpp">
-      <Filter>AIToolKit</Filter>
-    </ClCompile>
-    <ClCompile Include="..\AIToolKit\State.cpp">
-      <Filter>AIToolKit</Filter>
-    </ClCompile>
-    <ClCompile Include="..\SteeringBehaviours\SteeringBehaviour.cpp">
-      <Filter>AIToolKit</Filter>
-    </ClCompile>
-    <ClCompile Include="WanderDecisionNode.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="AttackDecisionNode.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="SeekDecisionNode.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\AIToolKit\BooleanDecisionNode.cpp">
-      <Filter>AIToolKit</Filter>
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AIToolKit\FollowBehaviour.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AIToolKit\GameObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AIToolKit\KeyboardBehaviour.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AIToolKit\State.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SteeringBehaviours\SteeringBehaviour.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Composite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Selector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sequence.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Graph.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="DecisionTreesApp.h">
+    <ClInclude Include="AI_AssignmentApp.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\AIToolKit\aiUtilities.h">
-      <Filter>AIToolKit</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\AIToolKit\Behaviour.h">
-      <Filter>AIToolKit</Filter>
-    </ClInclude>
-    <ClInclude Include="..\AIToolKit\Condition.h">
-      <Filter>AIToolKit</Filter>
-    </ClInclude>
-    <ClInclude Include="..\AIToolKit\FollowBehaviour.h">
-      <Filter>AIToolKit</Filter>
-    </ClInclude>
-    <ClInclude Include="..\AIToolKit\GameObject.h">
-      <Filter>AIToolKit</Filter>
-    </ClInclude>
-    <ClInclude Include="..\AIToolKit\KeyboardBehaviour.h">
-      <Filter>AIToolKit</Filter>
-    </ClInclude>
-    <ClInclude Include="..\AIToolKit\State.h">
-      <Filter>AIToolKit</Filter>
-    </ClInclude>
-    <ClInclude Include="..\SteeringBehaviours\SteeringBehaviour.h">
-      <Filter>AIToolKit</Filter>
-    </ClInclude>
-    <ClInclude Include="..\AIToolKit\DecisionNode.h">
-      <Filter>AIToolKit</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\AIToolKit\BooleanDecisionNode.h">
-      <Filter>AIToolKit</Filter>
-    </ClInclude>
-    <ClInclude Include="DecisionTreeInclude.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="WanderDecisionNode.h">
+    <ClInclude Include="..\AIToolKit\Condition.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="AttackDecisionNode.h">
+    <ClInclude Include="..\AIToolKit\DecisionNode.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="SeekDecisionNode.h">
+    <ClInclude Include="..\AIToolKit\FollowBehaviour.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AIToolKit\GameObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AIToolKit\KeyboardBehaviour.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AIToolKit\State.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SteeringBehaviours\SteeringBehaviour.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Composite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Selector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sequence.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Graph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GuardStates.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

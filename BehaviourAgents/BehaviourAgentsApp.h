@@ -2,13 +2,12 @@
 
 #include "Application.h"
 #include "Renderer2D.h"
-#include "Graph.h"
 
-class PathfindingApp : public aie::Application {
+class BehaviourAgentsApp : public aie::Application {
 public:
 
-	PathfindingApp();
-	virtual ~PathfindingApp();
+	BehaviourAgentsApp();
+	virtual ~BehaviourAgentsApp();
 
 	virtual bool startup();
 	virtual void shutdown();
@@ -16,13 +15,8 @@ public:
 	virtual void update(float deltaTime);
 	virtual void draw();
 
-	Graph graph;
-
 protected:
 
 	aie::Renderer2D*	m_2dRenderer;
 	aie::Font*			m_font;
-
-	int xGridSize = 41;
-	int yGridSize = 24;
 };

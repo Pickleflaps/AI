@@ -170,8 +170,10 @@ std::vector<Node*> Graph::AStarSearch(Node * startNode, Node * endNode, Heuristi
 
 		}
 	}
-	std::vector<Node*> path;
-
+	//std::vector<Node*> path;
+	if (!path.empty()) {
+		path.clear();
+	}
 	Node* currentPathNode = endNode;
 
 	while (currentPathNode != NULL)
@@ -186,11 +188,13 @@ std::vector<Node*> Graph::AStarSearch(Node * startNode, Node * endNode, Heuristi
 	return path;
 }
 
+
 void Graph::Reset()
 {
 	for (auto node : nodes) {
 		node->Reset();
 	}
+
 }
 
 void Graph::Render(aie::Renderer2D * spriteBatch)
